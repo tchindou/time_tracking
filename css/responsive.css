@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .right {
+                grid-template-columns: 1fr 1fr;
+                height: 100vh;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+
+        .main {
+                display: flex;
+                height: 80vh;
+                width: 80vw;
+                padding: 2%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow-y: hidden;
+        }
+
+        .left {
+                height: 94%;
+                width: 20%;
+                margin-top: 1%;
+                margin-right: 1%;
+        }
+
+        .left .profile {
+                display: block;
+        }
+
+        .left .profile .profile-img {
+                height: 50px;
+                width: 50px;
+        }
+
+        .left .menu ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+        }
+
+        .right {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                height: 98%;
+                width: 80%;
+        }
+
+        .right .card .card-desc .card-time h1 {
+                font-size: 60px;
+        }
+}

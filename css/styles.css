@@ -1,0 +1,156 @@
+* {
+        margin: 0px;
+        padding: 0px;
+}
+
+body {
+        background-color: hsl(226, 43%, 10%);
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+}
+
+p {
+        color: hsl(236, 100%, 87%);
+}
+
+i {
+        color: white;
+}
+
+h1 {
+        color: white;
+        font-weight: 300;
+}
+
+li {
+        list-style: none;
+        color: hsl(236, 100%, 87%);
+}
+
+li:hover {
+        color: white;
+}
+
+.active {
+        color: white;
+}
+
+.main {
+        height: 100vh;
+        width: 94vw;
+        padding: 2%;
+        overflow-y: scroll;
+}
+
+.left {
+        height: 150px;
+        width: 94%;
+        margin-top: 3%;
+        margin-left: 3%;
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 10px;
+}
+
+.left .profile {
+        display: flex;
+        align-items: center;
+        height: calc(70% - 40px);
+        width: calc(100% - 40px);
+        border-radius: 10px;
+        padding: 20px;
+        background-color: hsl(246, 80%, 60%);
+}
+
+.left .profile h1 {
+        font-size: 25px;
+}
+
+.left .profile .profile-img {
+        height: 35px;
+        width: 35px;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: white;
+}
+
+.left .profile .profile-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+}
+
+.left .profile .profile-info {
+        margin-top: 20px;
+}
+
+.left .menu ul {
+        display: flex;
+        justify-content: space-around;
+        height: calc(30% - 40px);
+        width: calc(100% - 40px);
+        padding: 20px;
+}
+
+.left .menu li {
+        cursor: pointer;
+        margin-bottom: 10px;
+}
+
+.right {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 200vh;
+}
+
+.right .card {
+        background-color: hsl(43, 84%, 65%);
+        border-radius: 10px;
+        margin: 4%;
+        position: relative;
+        z-index: 0;
+}
+
+.right .card img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        z-index: 0;
+}
+
+.right .card .card-desc {
+        position: absolute;
+        bottom: 0px;
+        background-color: hsl(235, 46%, 20%);
+        width: calc(100% - 40px);
+        height: calc(85% - 40px);
+        border-radius: 10px;
+        padding: 20px;
+        z-index: 50;
+}
+
+.right .card .card-desc .card-title {
+        display: flex;
+        justify-content: space-between;
+}
+
+.right .card .card-desc .card-title img {
+        width: 20px;
+        height: 5px;
+        margin-top: 25px;
+}
+
+.right .card .card-desc .card-time {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+}
+
+.right .card .card-desc .card-time h1 {
+        font-size: 48px;
+}
